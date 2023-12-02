@@ -292,7 +292,7 @@ DEPENDENCIES
   simple_form (~> 5.1.0)
   sprockets-rails
   stimulus-rails
-  turbo-rails (~> 1.0)
+  turbo-rails
   tzinfo-data
   web-console
   webdrivers
