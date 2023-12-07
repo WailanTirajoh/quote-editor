@@ -1,5 +1,11 @@
 <%= turbo_stream_from "quotes" %>
 
+<%
+=begin%>
+ <%= current_user&.email %> 
+<%
+=end%>
+
 <div class="container">
   <div class="header">
     <h1>Quotes</h1>
@@ -14,4 +20,11 @@
   <%= turbo_frame_tag "quotes" do %>
     <%= render @quotes %>
   <% end %>
+</div>
+
+
+<div data-controller="hello">
+  <button data-action="click->hello#handleClick"> tes </button>
+
+  <div data-hello-target="test" />
 </div>

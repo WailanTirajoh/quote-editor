@@ -75,3 +75,7 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "selenium-webdriver"
 end
+
+# source "https://rubygems.pkg.github.com/klg-tech" do
+#   gem "klg_jwt_auth", "0.1.9"
+# end
