@@ -76,6 +76,10 @@ group :test do
   gem "selenium-webdriver"
 end
 
-# source "https://rubygems.pkg.github.com/klg-tech" do
-#   gem "klg_jwt_auth", "0.1.9"
-# end
+source "https://rubygems.pkg.github.com/klg-tech" do
+  gem "klg_jwt_auth", "0.1.6"
+end
+
+gem "jwt", "~> 2.7"
+
+gem "faraday", "~> 2.7"

@@ -2,6 +2,7 @@ import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
   connect() {
+    console.log('in')
     // Register an observer for Turbo Drive events
     document.addEventListener(
       "turbo:before-fetch-request",
@@ -18,7 +19,7 @@ export default class extends Controller {
 
   handleBeforeFetchRequest(event) {
     // Retrieve the value from local storage
-    const tokenValue = localStorage.getItem("test123");
+    const tokenValue = localStorage.getItem("auth.access_token");
 
     // Add the value to the XHR request headers
     event.detail.fetchOptions.headers["Authorization"] = tokenValue;

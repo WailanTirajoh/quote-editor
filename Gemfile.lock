@@ -105,6 +105,11 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
+    faraday (2.7.12)
+      base64
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.2)
     ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -123,6 +128,7 @@ GEM
       activesupport (>= 5.0.0)
     jsbundling-rails (1.2.1)
       railties (>= 6.0.0)
+    jwt (2.7.1)
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -272,6 +278,11 @@ GEM
       nokogiri (~> 1.8)
     zeitwerk (2.6.12)
 
+GEM
+  remote: https://rubygems.pkg.github.com/klg-tech/
+  specs:
+    klg_jwt_auth (0.1.6)
+
 PLATFORMS
   x86_64-linux
 
@@ -280,9 +291,12 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
+  faraday (~> 2.7)
   hotwire-livereload
   jbuilder
   jsbundling-rails
+  jwt (~> 2.7)
+  klg_jwt_auth (= 0.1.6)!
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.2)

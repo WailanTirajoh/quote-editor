@@ -1,5 +1,6 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
+  before_action :ensure_authenticated!
 
   def index
     @quotes = Quote.ordered

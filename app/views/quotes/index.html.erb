@@ -1,11 +1,7 @@
 <%= turbo_stream_from "quotes" %>
 
-<%
-=begin%>
- <%= current_user&.email %> 
-<%
-=end%>
-
+<%= @current_user["Nama"] %> 
+ 
 <div class="container">
   <div class="header">
     <h1>Quotes</h1>
